@@ -11,6 +11,7 @@ setup.py
 resource/turtlesim_catch_them_all
 turtlesim_catch_them_all/__init__.py
 turtlesim_catch_them_all/turtle_controller.py
+turtlesim_catch_them_all/turtle_spawner.py
 turtlesim_catch_them_all.egg-info/PKG-INFO
 turtlesim_catch_them_all.egg-info/SOURCES.txt
 turtlesim_catch_them_all.egg-info/dependency_links.txt

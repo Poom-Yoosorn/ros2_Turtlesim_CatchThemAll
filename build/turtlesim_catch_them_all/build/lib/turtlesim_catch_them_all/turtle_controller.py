@@ -47,6 +47,7 @@ class TurtleControllerNode(Node):
         else:
             msg.linear.x = 0.0
             msg.angular.z = 0.0
+        
             
         #do some stuff
         
