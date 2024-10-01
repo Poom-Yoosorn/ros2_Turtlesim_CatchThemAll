@@ -2,12 +2,13 @@
 import math
 import rclpy
 from rclpy.node import Node
+from functools import partial
 
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
 from turtlesim_catch_them_all_interfaces.msg import Turtle
 from turtlesim_catch_them_all_interfaces.msg import TurtleArray
-
+from turtlesim_catch_them_all_interfaces.srv import CatchTurtle 
 
 class TurtleControllerNode(Node): 
     def __init__(self):
@@ -53,16 +54,39 @@ class TurtleControllerNode(Node):
             msg.angular.z = 6*diff
             
         else:
+            #target reach
             msg.linear.x = 0.0
             msg.angular.z = 0.0
-        
-            
-        #do some stuff
+            self.call_catch_turtle_server(self.turtle_to_catch_.name)
+            self.turtle_to_catch_ = None
         
         self.cmd_vel_publisher_.publish(msg)
 
 
 
+    def call_catch_turtle_server(self, turtle_name):
+        client = self.create_client(CatchTurtle,"catch_turtle")
+    
+        while not client.wait_for_service(1.0):
+            self.get_logger().warn("Waiting for server...")
+    
+        request = CatchTurtle.Request()
+        request.name = turtle_name
+        
+        future = client.call_async(request)
+        future.add_done_callback(partial(self.callback_call_catch_turtle, turtle_name=turtle_name))
+    
+    
+    
+    def callback_call_catch_turtle(self, future, turtle_name):
+        try:
+            response = future.result()
+            if not response.success:
+                self.get_logger().error("Turtle "+ str(turtle_name)+ " Could not be caugth")
+   
+        except Exception as e:
+            self.get_logger().error("Service all failed %r" %(e,))  
+    
 
 
 

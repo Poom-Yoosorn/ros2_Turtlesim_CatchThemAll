@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED) #for create own msg/srv
 rosidl_generate_interfaces(${PROJECT_NAME} #for create own msg/srv
   "msg/Turtle.msg"
   "msg/TurtleArray.msg"
+  "srv/CatchTurtle.srv"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

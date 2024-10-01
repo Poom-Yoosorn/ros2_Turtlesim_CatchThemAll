@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces:msg/Turtle.idl",
-    "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces:msg/TurtleArray.idl"
+    "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces:msg/TurtleArray.idl",
+    "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces:srv/CatchTurtle.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -21,6 +22,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces/msg/Turtle.idl",
-    "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces/msg/TurtleArray.idl"
+    "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces/msg/TurtleArray.idl",
+    "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces/srv/CatchTurtle.idl"
   ]
 }

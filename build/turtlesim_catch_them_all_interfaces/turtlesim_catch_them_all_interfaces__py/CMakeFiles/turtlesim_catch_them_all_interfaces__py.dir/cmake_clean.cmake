@@ -7,6 +7,9 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/turtlesim_catch_them_all_interfaces/msg/_turtle_array.py"
   "../rosidl_generator_py/turtlesim_catch_them_all_interfaces/msg/_turtle_array_s.c"
   "../rosidl_generator_py/turtlesim_catch_them_all_interfaces/msg/_turtle_s.c"
+  "../rosidl_generator_py/turtlesim_catch_them_all_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/turtlesim_catch_them_all_interfaces/srv/_catch_turtle.py"
+  "../rosidl_generator_py/turtlesim_catch_them_all_interfaces/srv/_catch_turtle_s.c"
   "CMakeFiles/turtlesim_catch_them_all_interfaces__py"
 )
 

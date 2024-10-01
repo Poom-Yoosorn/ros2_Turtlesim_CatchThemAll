@@ -364,11 +364,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_catch_them_all_interfaces/srv" TYPE FILE FILES "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_adapter/turtlesim_catch_them_all_interfaces/srv/CatchTurtle.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_catch_them_all_interfaces/msg" TYPE FILE FILES "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/src/turtlesim_catch_them_all_interfaces/msg/Turtle.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_catch_them_all_interfaces/msg" TYPE FILE FILES "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/src/turtlesim_catch_them_all_interfaces/msg/TurtleArray.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_catch_them_all_interfaces/srv" TYPE FILE FILES "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/src/turtlesim_catch_them_all_interfaces/srv/CatchTurtle.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_catch_them_all_interfaces/srv" TYPE FILE FILES "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_cmake/srv/CatchTurtle_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_catch_them_all_interfaces/srv" TYPE FILE FILES "/home/poom/Desktop/ros2_Turtlesim_CatchThemAll_ws/build/turtlesim_catch_them_all_interfaces/rosidl_cmake/srv/CatchTurtle_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/turtlesim_catch_them_all_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_catch_them_all_interfaces/msg/_turtle_array_s.c.o.d"
   "CMakeFiles/turtlesim_catch_them_all_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_catch_them_all_interfaces/msg/_turtle_s.c.o"
   "CMakeFiles/turtlesim_catch_them_all_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_catch_them_all_interfaces/msg/_turtle_s.c.o.d"
+  "CMakeFiles/turtlesim_catch_them_all_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_catch_them_all_interfaces/srv/_catch_turtle_s.c.o"
+  "CMakeFiles/turtlesim_catch_them_all_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_catch_them_all_interfaces/srv/_catch_turtle_s.c.o.d"
   "rosidl_generator_py/turtlesim_catch_them_all_interfaces/libturtlesim_catch_them_all_interfaces__rosidl_generator_py.pdb"
   "rosidl_generator_py/turtlesim_catch_them_all_interfaces/libturtlesim_catch_them_all_interfaces__rosidl_generator_py.so"
 )
