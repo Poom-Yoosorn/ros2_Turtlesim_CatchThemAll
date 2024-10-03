@@ -18,11 +18,15 @@ import math
 class TurtleSpawner(Node):
     def __init__(self):
         super().__init__("turtle_spawner")
-        self.turtle_name_prefix_ = "turtle"
+        self.declare_parameter("spawn_frequency", 1.0)
+        self.declare_parameter("turtle_name_prerfix", "turtle")
+        
+        self.spawn_frequency_ = self.get_parameter("spawn_frequency").value
+        self.turtle_name_prefix_ = self.get_parameter("turtle_name_prerfix").value
         self.turtle_counter_ = 0
         self.alive_turtles_ = []
         self.alive_turtle_publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
-        self.spawn_turtle_timer_ = self.create_timer(2.0, self.spawn_new_turtle)
+        self.spawn_turtle_timer_ = self.create_timer(1.0/self.spawn_frequency_, self.spawn_new_turtle)
         self.catch_turtle_service_ = self.create_service(CatchTurtle, "catch_turtle", self.callback_catch_turtle)
         
     def callback_catch_turtle(self, request, response):
